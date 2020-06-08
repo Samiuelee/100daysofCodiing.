@@ -40,4 +40,4 @@ for price in clthDict:
 
 for cloth in clothBuy:
     cost = str(clthDict[cloth])
-    print('You are buying', cloth, 'at the price', cost)
+    print('You are buying', cloth, 'at the price', '#' + cost)
