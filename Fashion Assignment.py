@@ -11,6 +11,10 @@ if Gender == '1':
     print('Your gender is Male\n')
 elif Gender == '2':
     print('Your gender is Female \n')
+    
+#all clothes
+clothBuy = []
+clthDict ={'Sweat Shirt':250, 'Jean Trouser':500, 'Cardigan':800, 'Round neck':450, 'Tuttle neck':420, 'Suit':2000, 'Towel':320, 'Curtain':120, 'Table Cloth':20, 'Slippers':120}
 
 #Age
 while True:
@@ -24,20 +28,17 @@ while True:
                   '\n 10) Slippers')
         break
 
-#all clothes
-clothBuy = []
-clthDict ={'Sweat Shirt':250, 'Jean Trouser':500, 'Cardigan':800, 'Round neck':450, 'Tuttle neck':420, 'Suit':2000, 'Towel':320, 'Curtain':120, 'Table Cloth':20, 'Slippers':120}
 
-
-#printprice
-for price in clthDict:
-    value1 = input('Sweat Shirt?: ')
-    if value1 == 'y':
-        print(price, 'selected \n')
-        clothBuy.append(str(price))
-    elif value1 == 'n':
-        print(price, ' not selected \n')
-
-for cloth in clothBuy:
-    cost = str(clthDict[cloth])
-    print('You are buying', cloth, 'at the price', '#' + cost)
+    
+    #printprice
+    for price in clthDict:
+        value1 = input('Sweat Shirt?: ')
+        if value1 == 'y':
+            print(price, 'selected \n')
+            clothBuy.append(str(price))
+        elif value1 == 'n':
+            print(price, ' not selected \n')
+    
+    for cloth in clothBuy:
+        cost = str(clthDict[cloth])
+        print('You are buying', cloth, 'at the price', '#' + cost)
